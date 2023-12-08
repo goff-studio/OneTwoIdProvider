@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/goff-studio/OneTwoIdProvider.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Your Name' => 'your.email@example.com' }
-  s.source           = { :git => 'https://github.com/goff-studio/OneTwoIdProvider.git', :tag => '1.0.0' }
+  s.source           = { :git => 'https://github.com/goff-studio/OneTwoIdProvider.git', :tag => '1.0.1' }
   s.swift_version    = '5.5'
   s.ios.deployment_target = '13.0'
   s.source_files = 'Sources/**/*.swift'
