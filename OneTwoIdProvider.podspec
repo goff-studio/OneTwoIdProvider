@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'OneTwoIdProvider'
-  s.version          = '1.0.1'
+  s.version          = '1.0.4'
   s.summary          = 'A simple network request pod.'
   s.description      = 'A pod for making a simple network request and formatting the response as JSON.'
   s.homepage         = 'https://github.com/goff-studio/OneTwoIdProvider.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Your Name' => 'your.email@example.com' }
-  s.source           = { :git => 'https://github.com/goff-studio/OneTwoIdProvider.git', :tag => '1.0.1' }
+  s.source           = { :git => 'https://github.com/goff-studio/OneTwoIdProvider.git', :tag => '1.0.4' }
   s.swift_version    = '5.5'
   s.ios.deployment_target = '13.0'
   s.source_files = 'Sources/**/*.swift'
