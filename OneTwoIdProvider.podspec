@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Your Name' => 'your.email@example.com' }
   s.source           = { :git => 'https://github.com/goff-studio/OneTwoIdProvider.git', :tag => '1.0.4' }
   s.swift_version    = '5.5'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.4'
   s.source_files = 'Sources/**/*.swift'
   s.dependency 'Alamofire', '~> 5.0'
 end
