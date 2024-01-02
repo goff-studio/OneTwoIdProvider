@@ -27,17 +27,17 @@ public struct OneTwoIdProvider {
         return application.canOpenURL(appUrl)
     }
     
-    // Open com.onetwoid.mobile if installed
-    public static func open12iDApp(appBundle: String = "com.onetwoid.mobile") {
-        guard is12iDAppInstalled(appBundle: appBundle) else {
-            print("12iD app is not installed")
-            return
-        }
-        guard let appUrl = URL(string: "\(appBundle)://"), let application = sharedApplication else {
-            return
-        }
-        application.open(appUrl, options: [:], completionHandler: nil)
-    }
+//    // Open com.onetwoid.mobile if installed
+//    public static func open12iDApp(appBundle: String = "com.onetwoid.mobile") {
+//        guard is12iDAppInstalled(appBundle: appBundle) else {
+//            print("12iD app is not installed")
+//            return
+//        }
+//        guard let appUrl = URL(string: "\(appBundle)://"), let application = sharedApplication else {
+//            return
+//        }
+//        application.open(appUrl, options: [:], completionHandler: nil)
+//    }
     // check to see is com.onetwoid.mobile installed or not and return a boolean
     public static func is12iDAppInstalled(appScheme: String = "com.onetwoid.mobile") -> Bool {
         let appUrl = URL(string: "\(appScheme)://")!
@@ -46,8 +46,8 @@ public struct OneTwoIdProvider {
     }
     
     // opens 12iD app if installed
-    public static func open12iDApp(appScheme: String = "com.onetwoid.mobile") {
-        if (!is12iDAppInstalled(appScheme: appScheme)) {
+    public static func open12iDApp(appBundle: String = "com.onetwoid.mobile") {
+        if (!is12iDAppInstalled(appBundle: appScheme)) {
             print("12iD app is not installed")
             return
         }
