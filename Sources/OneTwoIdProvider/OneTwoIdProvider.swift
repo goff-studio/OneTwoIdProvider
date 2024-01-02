@@ -19,14 +19,14 @@ public struct OneTwoIdProvider {
         return isUIKitAvailable ? UIApplication.shared : nil
     }
     
-    // Check if com.onetwoid.mobile is installed and return a boolean
-    public static func is12iDAppInstalled(appBundle: String = "com.onetwoid.mobile") -> Bool {
-        guard let appUrl = URL(string: "\(appBundle)://"), let application = sharedApplication else {
-            return false
-        }
-        return application.canOpenURL(appUrl)
-    }
-    
+//    // Check if com.onetwoid.mobile is installed and return a boolean
+//    public static func is12iDAppInstalled(appBundle: String = "com.onetwoid.mobile") -> Bool {
+//        guard let appUrl = URL(string: "\(appBundle)://"), let application = sharedApplication else {
+//            return false
+//        }
+//        return application.canOpenURL(appUrl)
+//    }
+//
 //    // Open com.onetwoid.mobile if installed
 //    public static func open12iDApp(appBundle: String = "com.onetwoid.mobile") {
 //        guard is12iDAppInstalled(appBundle: appBundle) else {
